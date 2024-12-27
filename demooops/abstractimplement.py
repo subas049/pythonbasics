@@ -1,7 +1,5 @@
 from abstractdemo import Car, Bike
-
-
-
+from basics.assignmnt1 import *
 car1=Car()
 bike1=Bike()
 
@@ -22,5 +20,7 @@ bike1.brake()
 set_color(car1,'Red')
 print(get_color(car1))
 print(get_color(bike1))
+
+printdetails()
 
 

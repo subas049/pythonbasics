@@ -1,4 +1,4 @@
-numlist=[1,2,3,4,5,6,7,8]
+numlist=list(range(5))
 
 
 def sumofnumlist(numlist):

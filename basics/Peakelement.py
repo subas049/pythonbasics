@@ -3,16 +3,14 @@ n=len(num_list)
 print(n)
 for i in range(n):
     if i == 0 and num_list[i] > num_list[i + 1]:
-        print(num_list[i])
+        print(num_list[i], end=" ")
     elif i == n-1 and num_list[i] > num_list[i -1]:
-        print(num_list[i])
+        print(num_list[i], end=" ")
     elif num_list[i] > num_list[i + 1] and num_list[i] > num_list[i - 1]:
-        print(num_list[i])
+        print(num_list[i],end=" ")
 
-print('completed')
+print('\ncompleted')
 
-for i in range(5):
-    print(i)
 
 
 

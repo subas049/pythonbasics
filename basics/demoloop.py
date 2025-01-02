@@ -12,14 +12,14 @@ while number<=100:
 print("completed")'''
 
 for i in range(0,100+1,2):
-    print(i)
+    print(i, end=" ")
 print('bye')
 
 lis=[1,3,5,3,4,5,2,7,8]
 
 for i in lis:
-    print(i*5)
+    print(i*5, end=" ")
 else:
-    print('for loop completed')
+    print('\nfor loop completed')
 print("completed")
 

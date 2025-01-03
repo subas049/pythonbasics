@@ -1,23 +1,24 @@
-
 def removeduplicates(string_dulicate):
-    newstr=''
+    newstr = ''
     for char in string_dulicate:
-        if char not in newstr:
-            newstr=newstr+char
+        if char.lower() not in newstr.lower():
+            newstr = newstr + char
     return newstr
 
+
 def dupcount(string_dulicate):
-    newstr=''
+    newstr = ''
     for i in string_dulicate:
-        count=0
-        if i not in newstr:
-            newstr=newstr+i
+        count = 0
+        if i.lower() not in newstr.lower():
+            newstr = newstr + i
             for j in range(len(string_dulicate)):
-                if i==string_dulicate[j]:
-                    count+=1
-            print(i+' : '+str(count))
+                if i.lower() == string_dulicate[j].lower():
+                    count += 1
+            if count > 1:
+                print(i + ' : ' + str(count))
     print(newstr)
 
 
-print(removeduplicates('SubashSubashP'))
-print(dupcount('SubashSubashP'))
+print(removeduplicates('SubashPSubashP'))
+print(dupcount('SubashPSubashP'))

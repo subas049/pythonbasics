@@ -8,6 +8,7 @@ def printnum(num):
     print('the parameter value is : '+str(num))
     print('the global num value is : '+str(globals()['num']))
     print(str(x))
+    print(name)
 
 printnum(50)
 
